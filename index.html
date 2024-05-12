@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>ACADEMIX</title>
+      <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Responsive Navigation Bar</title><link rel="stylesheet" href="./style.css">
+    <style>
+      body {
+        background-image: url('Picsart_24-04-30_01-04-36-059.jpg');
+        background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(1, 1, 16);
+
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    
+      }
+    </style>
+
+</head>
+<body>
+
+<nav>
+      <div class="logo">
+        <h4>ACADEMIX</h4>
+      </div>
+      <ul class="nav-links">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about" onclick="scrollToSection('about')">About</a></li>
+        <li class="has-child">
+          <a href="#">Explore</a>
+          <ul class="sub-menu">                         
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="todo.html">To-Do List</a></li>
+            <li><a href="flash.html">Flashcards</a></li>
+            <li class="has-child">
+              <a href="#">Accessibility</a>
+             
+              <ul class="sub-menu">
+                <li><a href="cal.html">Calendar</a></li>
+                <li><a href="speech.html">Speech to Text</a></li>
+                <li><a href="calcu.html">Calculator</a></li>
+                
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="has-child">
+          <a href="#">More</a>
+         
+          <ul class="sub-menu">
+            <li><a href="https://discord.gg/puexthVMmz">Interaction</a></li>
+            <li class="has-child">
+              <a href="#">Games</a>
+             
+              <ul class="sub-menu">
+               
+                <li><a href="sudoku.html">Sudoko</a></li>
+                <li><a href="tik.html">Tic-Tac-Toe</a></li>
+                
+                <li><a href="guess.html">Word Guessing Game</a></li>
+                
+              </ul>
+            </li>
+           
+          </ul>
+        </li>
+       
+      </ul>
+      <div class="right-side">
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <button class="btn">Hello</button>
+      </div>
+    </nav>
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <style>
+        .container h1 {
+          font-size: 70px; 
+        }
+      </style>
+    </head>
+    <body>
+      <main>
+        <div class="container">
+          <h1>Welcome to <br />ACADEMIX</h1>
+          <h2> Want Interactions? Join our  <a href="https://discord.gg/puexthVMmz">Discord </a>server</h2> 
+           <div >
+            <div style="box-sizing: content-box;   margin-top: 20px; margin-bottom: 20px; ">
+              <h3 id="typewriter">Hello, world!</h3>
+          </div>
+              
+                <button class="startbut"  onclick="scrollToBottom()">  Get Started</button>
+            </div>
+        </div>
+      </main>
+    </body>
+    </html>
+
+    <section id="about">
+      <h1 id="black">ABOUT US</h1>
+      
+      <div class="maincontainer">
+          <div class="abous">
+              
+              <h3 style="margin-top: 30px; font-size: xx-large;">Transforming the Way People Learn</h3>
+
+              <div class="para">
+                <p>
+                Our goal is to build online communities where students can help each other in a secure way. We want to create a website where students can help each other without feeling judged. We chose this topic because we want everyone to feel comfortable asking questions and learning together. Our website is all about supporting each other in learning new things.
+
+                </p>
+              
+              </div>
+                     
+          </div>
+          
+        </div>
+
+    </div>
+    </section>
+
+
+  <script type="module" src="./script.js"></script>
+  <script>
+    const scrollButton = document.getElementById('scrollButton');
+    function scrollToBottom() {
+        window.scrollTo({
+            top: 1080,
+            behavior: 'smooth' 
+        });
+    }
+   
+    scrollButton.addEventListener('click', scrollToBottom);
+</script>
+
+<footer>
+
+<p>
+  <b>Disclaimer:</b>
+  <br>
+  (1) Accessibility of some features may occur some unusual issues. Website images, videos, and display contents on this website are for reference only. 
+  <br>
+  (2) Websites' features and specifications (including appearance, color, and size), as well as display contents (such as backgrounds, UI, icons, and videos) may vary on different platform/device.
+  <br>
+  (3) All data on this website are theoretical values from internal testing done by both web designer and web developer under specific conditions. 
+  <br>
+  (4) For more details, refer to the website descriptions. Actual data may vary due to differences in products, software versions, application conditions, and environmental factors. All data are subject to actual usage.
+  <br>
+  (5) Due to real-time changes in website batches, and supply factors, ACADEMIX may make real-time adjustments to text descriptions and images on this website to match actual product performance, specifications, indexes, and components. Website information is subject to such changes without notice.
+<Br>
+  <br>
+ <u> Please note:</u>
+  - Analytics may not always be recorded.
+  - The Discord link may not always be accessible, which could affect functionality.
+  - Users should utilize features based on their needs.
+  - Some features may not function correctly.
+  
+ </p>
+  <p>&copy; 2024 ACADEMIX. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+  <footer>
+    <p>&copy; 2024 ACADEMIX. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
